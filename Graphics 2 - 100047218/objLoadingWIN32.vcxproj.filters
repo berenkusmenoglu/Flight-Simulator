@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\3DStruct">
+      <UniqueIdentifier>{34eb2007-f6f2-469a-8df3-e437f7d48518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Images">
+      <UniqueIdentifier>{30f9263c-e392-43c5-b674-fc9d548138f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Obj">
+      <UniqueIdentifier>{10749233-f559-4acd-8cf5-a24db55b5082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Structures">
+      <UniqueIdentifier>{638398f3-9150-42ae-91ee-7ce900299261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TextureHandler">
+      <UniqueIdentifier>{76dd2e5c-5e85-4906-92b1-5fdc32d61575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{f9f82a2a-47d8-4998-9160-9065b7a9503b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Octree">
+      <UniqueIdentifier>{578ba185-adba-4de1-bf5a-d116f3179ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\glslfiles">
+      <UniqueIdentifier>{9dae9f96-68c7-4460-8181-73adbd81dc15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\shaders">
+      <UniqueIdentifier>{7b2ed9eb-82da-429b-9cdc-1a163789b0b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Box">
+      <UniqueIdentifier>{b57eeaa2-5a64-457a-aa27-4a1f63c71881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Fonts">
+      <UniqueIdentifier>{a9a99e30-0f35-462a-abfc-ff996de4ddd4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3dStruct\BoundingBox.cpp">
+      <Filter>Header Files\3DStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="3dStruct\threeDModel.cpp">
+      <Filter>Header Files\3DStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="Images\imageLoaderPNG.cpp">
+      <Filter>Header Files\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj\OBJLoader.cpp">
+      <Filter>Header Files\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="Structures\Vector2d.cpp">
+      <Filter>Header Files\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Structures\Vector3d.cpp">
+      <Filter>Header Files\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureHandler\TextureHandler.cpp">
+      <Filter>Header Files\TextureHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\IntersectionTests.cpp">
+      <Filter>Header Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Octree\Octree.cpp">
+      <Filter>Header Files\Octree</Filter>
+    </ClCompile>
+    <ClCompile Include="shaders\Shader.cpp">
+      <Filter>Header Files\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Header Files\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FlightControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3dStruct\BoundingBox.h">
+      <Filter>Header Files\3DStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="3dStruct\threeDModel.h">
+      <Filter>Header Files\3DStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="Images\imageloader.h">
+      <Filter>Header Files\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="Images\nvImage.h">
+      <Filter>Header Files\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj\OBJLoader.h">
+      <Filter>Header Files\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="Structures\Vector2d.h">
+      <Filter>Header Files\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Structures\Vector3d.h">
+      <Filter>Header Files\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureHandler\TextureHandler.h">
+      <Filter>Header Files\TextureHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\IntersectionTests.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Lighting.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\MatrixRoutines.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Octree\Octree.h">
+      <Filter>Header Files\Octree</Filter>
+    </ClInclude>
+    <ClInclude Include="shaders\Shader.h">
+      <Filter>Header Files\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Header Files\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\freetype.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftbbox.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftbdf.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftcache.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftchapters.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\fterrdef.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\fterrors.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftglyph.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftgzip.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftimage.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftincrem.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftlist.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftmac.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftmm.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftmoderr.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftmodule.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftoutln.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftpfr.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftrender.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftsizes.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftsnames.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftstroker.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftsynth.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftsysio.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftsysmem.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftsystem.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\fttrigon.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\fttypes.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftwinfnt.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ftxf86.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\t1tables.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\ttnameid.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\tttables.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="freetype_include\freetype\tttags.h">
+      <Filter>Header Files\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FlightControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="glslfiles\Shader.frag">
+      <Filter>Header Files\glslfiles</Filter>
+    </None>
+    <None Include="glslfiles\Shader.vert">
+      <Filter>Header Files\glslfiles</Filter>
+    </None>
+    <None Include="glslfiles\Color.frag">
+      <Filter>Header Files\glslfiles</Filter>
+    </None>
+    <None Include="glslfiles\Color.vert">
+      <Filter>Header Files\glslfiles</Filter>
+    </None>
+    <None Include="glslfiles\basicTexture.frag">
+      <Filter>Header Files\glslfiles</Filter>
+    </None>
+    <None Include="glslfiles\basicTexture.vert">
+      <Filter>Header Files\glslfiles</Filter>
+    </None>
+  </ItemGroup>
+</Project>

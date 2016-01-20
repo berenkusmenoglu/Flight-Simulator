@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7EBD1346-C53E-4827-9064-EA320400FA40}</ProjectGuid>
+    <RootNamespace>objLoadingWIN32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>Graphics 2 - 100047218</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>.\freetype_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;libfreetype.lib;opengl32.lib;glu32.lib;glew32.lib;nvImage.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>.\freetype_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;libfreetype.lib;opengl32.lib;glu32.lib;nvImage.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="FlightControl.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="console.cpp" />
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="FreeType.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="3dStruct\BoundingBox.cpp" />
+    <ClCompile Include="3dStruct\threeDModel.cpp" />
+    <ClCompile Include="Images\imageLoaderPNG.cpp" />
+    <ClCompile Include="Obj\OBJLoader.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="Structures\Vector2d.cpp" />
+    <ClCompile Include="Structures\Vector3d.cpp" />
+    <ClCompile Include="TextureHandler\TextureHandler.cpp" />
+    <ClCompile Include="Utilities\IntersectionTests.cpp" />
+    <ClCompile Include="Octree\Octree.cpp" />
+    <ClCompile Include="shaders\Shader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="FlightControl.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="console.h" />
+    <ClInclude Include="3dStruct\BoundingBox.h" />
+    <ClInclude Include="3dStruct\threeDModel.h" />
+    <ClInclude Include="Box.h" />
+    <ClInclude Include="FreeType.h" />
+    <ClInclude Include="freetype_include\freetype\freetype.h" />
+    <ClInclude Include="freetype_include\freetype\ftbbox.h" />
+    <ClInclude Include="freetype_include\freetype\ftbdf.h" />
+    <ClInclude Include="freetype_include\freetype\ftcache.h" />
+    <ClInclude Include="freetype_include\freetype\ftchapters.h" />
+    <ClInclude Include="freetype_include\freetype\fterrdef.h" />
+    <ClInclude Include="freetype_include\freetype\fterrors.h" />
+    <ClInclude Include="freetype_include\freetype\ftglyph.h" />
+    <ClInclude Include="freetype_include\freetype\ftgzip.h" />
+    <ClInclude Include="freetype_include\freetype\ftimage.h" />
+    <ClInclude Include="freetype_include\freetype\ftincrem.h" />
+    <ClInclude Include="freetype_include\freetype\ftlist.h" />
+    <ClInclude Include="freetype_include\freetype\ftmac.h" />
+    <ClInclude Include="freetype_include\freetype\ftmm.h" />
+    <ClInclude Include="freetype_include\freetype\ftmoderr.h" />
+    <ClInclude Include="freetype_include\freetype\ftmodule.h" />
+    <ClInclude Include="freetype_include\freetype\ftoutln.h" />
+    <ClInclude Include="freetype_include\freetype\ftpfr.h" />
+    <ClInclude Include="freetype_include\freetype\ftrender.h" />
+    <ClInclude Include="freetype_include\freetype\ftsizes.h" />
+    <ClInclude Include="freetype_include\freetype\ftsnames.h" />
+    <ClInclude Include="freetype_include\freetype\ftstroker.h" />
+    <ClInclude Include="freetype_include\freetype\ftsynth.h" />
+    <ClInclude Include="freetype_include\freetype\ftsysio.h" />
+    <ClInclude Include="freetype_include\freetype\ftsysmem.h" />
+    <ClInclude Include="freetype_include\freetype\ftsystem.h" />
+    <ClInclude Include="freetype_include\freetype\fttrigon.h" />
+    <ClInclude Include="freetype_include\freetype\fttypes.h" />
+    <ClInclude Include="freetype_include\freetype\ftwinfnt.h" />
+    <ClInclude Include="freetype_include\freetype\ftxf86.h" />
+    <ClInclude Include="freetype_include\freetype\t1tables.h" />
+    <ClInclude Include="freetype_include\freetype\ttnameid.h" />
+    <ClInclude Include="freetype_include\freetype\tttables.h" />
+    <ClInclude Include="freetype_include\freetype\tttags.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Images\imageloader.h" />
+    <ClInclude Include="Images\nvImage.h" />
+    <ClInclude Include="Obj\OBJLoader.h" />
+    <ClInclude Include="Rect.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="Structures\Vector2d.h" />
+    <ClInclude Include="Structures\Vector3d.h" />
+    <ClInclude Include="TextureHandler\TextureHandler.h" />
+    <ClInclude Include="Utilities\IntersectionTests.h" />
+    <ClInclude Include="Utilities\Lighting.h" />
+    <ClInclude Include="Utilities\MatrixRoutines.h" />
+    <ClInclude Include="Octree\Octree.h" />
+    <ClInclude Include="shaders\Shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="glslfiles\basicTexture.frag" />
+    <None Include="glslfiles\basicTexture.vert" />
+    <None Include="glslfiles\Color.frag" />
+    <None Include="glslfiles\Color.vert" />
+    <None Include="glslfiles\Shader.frag" />
+    <None Include="glslfiles\Shader.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
